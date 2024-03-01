@@ -47,7 +47,6 @@ class TaskController extends Controller
             'title' => $request->input('title'),
             'user_id' => Auth::id(),
         ]);
-
         return response()->json($task, 201);
     }
 
